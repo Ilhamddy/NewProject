@@ -53,11 +53,11 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
 
-        based1: "#FFC800",
-        based: "#FFC800",
+        based1: "#075fb8",
+        based: "#075fb8",
         second: "#FDFDFD",
         third: "#F6F1E9",
-        dope:"#08080D",
+        dope: "#08080D",
         // darker: "#2F4858",
       },
       backgroundImage: {

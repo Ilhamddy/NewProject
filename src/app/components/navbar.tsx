@@ -97,7 +97,7 @@ const Navbarsection = () => {
   };
 
   const textStyle = {
-    color: scrollPosisition > 0 ? "#FFC800" : "#FFFFFF",
+    color: scrollPosisition > 0 ? "##075fb8" : "#FFFFFF",
     // textShadow: scrollPosisition > 0 ? "1px 1px 2px #ffffff" : "1px 1px 2px #000000",
   };
 
@@ -126,8 +126,8 @@ const Navbarsection = () => {
                       ? "/image/logoSNB1putih.png"
                       : "/image/logoSNB1putih.png"
                   }
-                  height={200}
-                  width={200}
+                  height={50}
+                  width={50}
                   alt="logo PT. SOLUSI NUSANTARA BERDIKARI"
                 />
               </Link>
@@ -221,133 +221,31 @@ const Navbarsection = () => {
                         key={data.title}
                         className=" my-2 flex w-64 justify-center md:my-0 md:w-full dark:text-white"
                       >
-                        {data.list ? (
-                          <>
-                            <NavigationMenuTrigger className="rounded-md bg-transparent px-5 py-2 text-sm hover:bg-transparent hover:text-white dark:bg-transparent ">
-                              <a href="/product">
-                              {data.title}
-                             </a>
-                            </NavigationMenuTrigger>
-                            <NavigationMenuContent className="w-full bg-transparent hover:bg-transparent ">
-                              <ul className="grid  gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] text-lg">
-                              
-                                <a href="/product-detail">
-                                  <li
-                                    className="h-24 rounded-md bg-gradient-to-b from-muted/50  to-muted p-4 no-underline outline-none focus:shadow-md"
-                                    title="Introduction"
-                                  >
-                                    <FaHospital className="h-6 w-6 text-based1 " />
-                                    SIMRS 
-                                  </li>
-                                </a>
-                                <a href="/product-detail-klinik">
-                                  <li
-                                    className=" h-24 rounded-md bg-gradient-to-b from-muted/50 to-muted p-4 no-underline outline-none focus:shadow-md"
-                                    title="Installation"
-                                  >
-                                    <FaClinicMedical className="h-6 w-6  text-based1" />
-                                    SIM-Klinik
-                                  </li>
-                                </a>
-                              </ul>
-                            </NavigationMenuContent>
-                          </>
-                        ) : (
-                          <>
-                            <NavigationMenuLink
-                              asChild
-                              className={`${navigationMenuTriggerStyle()} text-md rounded-md bg-transparent px-5 py-2 hover:bg-transparent hover:text-third dark:bg-transparent`}
-                            >
-                              <div>
-                                <a href={data.link}>
-                                  <div>{data.title}</div>
-                                </a>
-                              </div>
-                            </NavigationMenuLink>
-                          </>
-                        )}
+
+                        <>
+                          <NavigationMenuLink
+                            asChild
+                            className={`${navigationMenuTriggerStyle()} text-md rounded-md bg-transparent px-5 py-2 hover:bg-transparent hover:text-third dark:bg-transparent`}
+                          >
+                            <div>
+                              <a href={data.link}>
+                                <div>{data.title}</div>
+                              </a>
+                            </div>
+                          </NavigationMenuLink>
+                        </>
+
                       </NavigationMenuItem>
                     </NavigationMenuList>
                   </NavigationMenu>
                 );
               })}
             </div>
-            <div className="hidden md:block">
-              <div className="grid grid-cols-2 place-items-center gap-5">
-                <div>
-                  <DropdownMenu>
-                    <DropdownMenuTrigger asChild>
-                      <Button variant="outline" size="icon">
-                        <SunIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-                        <MoonIcon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-                        <span className="sr-only">Toggle theme</span>
-                      </Button>
-                    </DropdownMenuTrigger>
-                    <DropdownMenuContent align="end">
-                      <DropdownMenuItem onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
-                        {theme === "light" ? "Dark" : "Light"}
-                      </DropdownMenuItem>
 
-                    </DropdownMenuContent>
-                  </DropdownMenu>
-                </div>
-
-                <div>
-                  {users.id ? (
-                    <DropdownMenu>
-                      <DropdownMenuTrigger asChild>
-                        <Button
-                          className="h-8 w-8 rounded-full border border-gray-200 dark:border-gray-800"
-                          size="icon"
-                          variant="ghost"
-                        >
-                          <FaUser  className="text-white"/>
-                          <span className="sr-only">Toggle user menu</span>
-                        </Button>
-                      </DropdownMenuTrigger>
-                      <DropdownMenuContent align="end">
-                        <Link href={"/dashboard"}>
-                          <DropdownMenuLabel>Dashboard</DropdownMenuLabel>
-                        </Link>
-                        <DropdownMenuSeparator />
-
-                        <DropdownMenuSeparator />
-                        <DropdownMenuItem onClick={handleLogout}>
-                          Logout
-                        </DropdownMenuItem>
-                      </DropdownMenuContent>
-                    </DropdownMenu>
-                  ) : (
-                    <DropdownMenu>
-                      <DropdownMenuTrigger asChild>
-                        <Button
-                          className="h-8 w-8 rounded-full border border-gray-200 dark:border-gray-800"
-                          size="icon"
-                          variant="ghost"
-                        >
-                          <FaUser className="text-white" />
-                          <span className="sr-only">Toggle user menu</span>
-                        </Button>
-                      </DropdownMenuTrigger>
-                      <DropdownMenuContent align="end">
-                        <DropdownMenuSeparator />
-                        {/* <Link href={"/register"}>
-                          <DropdownMenuItem>Register</DropdownMenuItem>
-                        </Link> */}
-                        <Link href={"/login"}>
-                          <DropdownMenuItem>Login</DropdownMenuItem>
-                        </Link>{" "}
-                        <DropdownMenuSeparator />
-                      </DropdownMenuContent>
-                    </DropdownMenu>
-                  )}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
+          </div >
+        </div >
+      </nav >
+    </header >
   );
 };
 

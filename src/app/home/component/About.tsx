@@ -67,7 +67,7 @@ const About = () => {
                                 data-aos-easing="ease-in-out"
                                 data-aos-mirror="true"
                                 data-aos-once="false">
-                                <h1><span className='text-based1'></span>Bekerja Sama dengan PT. Solusi Nusantara Berdikari</h1>
+                                <h1><span className='text-based1'></span>Bekerja Sama dengan Diskominfo Penajam Paser Utara</h1>
                             </div>
                         </div>
                         <div className='flex flex-col justify-center mx-2 md:px-5'>

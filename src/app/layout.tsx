@@ -45,14 +45,14 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-      <StoreProvider>
+          <StoreProvider>
 
-          <Navbarsection />
-          {children}
+            <Navbarsection />
+            {children}
             <Footersection />
           </StoreProvider>
-            
-          </ThemeProvider>
+
+        </ThemeProvider>
       </body>
     </html>
   );

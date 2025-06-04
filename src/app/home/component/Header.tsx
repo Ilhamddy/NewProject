@@ -30,11 +30,11 @@ const Header = () => {
                             data-aos-mirror="true"
                             data-aos-once="false">
                             <div className='text-3xl md:text-6xl font-black text-center md:text-start space-y-28 mb-5  dark:text-dope '>
-                                <h1>PT. Solusi <span className='text-based '>Nusantara</span> Berdikari</h1>
+                                <h1>Diskominfo <span className='text-based '>Penajam</span> Paser Utara</h1>
                             </div>
                             <p></p>
                             <div className='text-justify dark:text-dope'>
-                                <h5>PT Solusi Nusantara Berdikari adalah pelopor dalam penyediaan solusi teknologi informasi yang berfokus pada industri kesehatan. Didirikan dengan semangat yang tak tergoyahkan oleh sekelompok konsultan ahli profesional yang telah mengakar dalam industri kesehatan selama lebih dari 30 tahun, kami menjelma sebagai kekuatan terkemuka dalam membawa inovasi teknologi ke ranah kesehatan.</h5>
+                                <h5>Dinas Komunikasi dan Informatika (Diskominfo) Kabupaten Penajam Paser Utara (PPU) adalah perangkat daerah yang bertanggung jawab dalam pengelolaan informasi publik, komunikasi pemerintahan, serta pengembangan teknologi informasi di wilayah PPU. Diskominfo PPU memiliki peran strategis dalam mendukung transformasi digital dan keterbukaan informasi di lingkungan pemerintah daerah.</h5>
                             </div>
                             <div className='grid grid-cols-1 md:grid-cols-2 gap-5 px-5 mt-20 my-'>
                                 <Link href='#detail'>

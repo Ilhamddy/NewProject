@@ -11,13 +11,14 @@ const Footersection = () => {
             <div className="text-teal-600">
               <Image
                 src={"/image/logoSNB1putih.png"}
-                width={300}
-                height={300}
+                width={100}
+                height={100}
                 alt="logo snb"
               />
             </div>
             <p className="mt-4 text-white flex text-start">
-            SNB, penyedia terkemuka dalam solusi inovatif, berdedikasi untuk meningkatkan pengalaman digital Anda.
+              Dinas Komunikasi dan Informatika (Diskominfo) Kabupaten Penajam Paser Utara (PPU) adalah perangkat daerah yang bertanggung jawab dalam pengelolaan informasi publik, komunikasi pemerintahan
+
             </p>
 
             <ul className="mt-8 flex gap-6">
@@ -98,17 +99,15 @@ const Footersection = () => {
                     className="text-white transition hover:opacity-75"
                   >
                     {" "}
-                    SIMRS{" "}
                   </a>
                 </li>
                 <li>
                   <a
-                                      href="/product-detail"
+                    href="/product-detail"
 
                     className="text-white transition hover:opacity-75"
                   >
                     {" "}
-                    SIM-Klinik{" "}
                   </a>
                 </li>
               </ul>
@@ -134,7 +133,7 @@ const Footersection = () => {
                     className="text-white transition hover:opacity-75"
                   >
                     {" "}
-                  Servis{" "}
+                    Servis{" "}
                   </a>
                 </li>
 
@@ -189,7 +188,7 @@ const Footersection = () => {
         </div>
 
         <p className="text-xs text-gray-500">
-          &copy; 2024. PT. Solusi Nusantara Berdikari. All rights reserved.
+          &copy; 2025. Ilhamddy. All rights reserved.
         </p>
       </div>
     </footer>

@@ -13,43 +13,23 @@ import {
 export const dataNav = [
   {
     title: "Tentang",
-    link: "/about",
+    link: "/",
   },
   {
-    title: "Servis",
-    link: "/service",
+    title: "PPID",
+    link: "/",
   },
   {
-    title: "Produk",
-    link: "/product",
-    list: [
-      {
-        item: {
-          title: "SIMRS",
-          link: "/",
-        },
-      },
-      {
-        item: {
-          title: "E-KLINIK",
-          link: "/",
-        },
-      },
-      {
-        item: {
-          title: "E-PUSKESMAS",
-          link: "/",
-        },
-      },
-    ],
+    title: "Layanan",
+    link: "/",
   },
   {
     title: "Berita",
-    link: "/news",
+    link: "/",
   },
   {
     title: "Hubungi Kami",
-    link: "/contact",
+    link: "/",
   },
 ];
 
@@ -98,7 +78,8 @@ export const dataService = [
     client: "Lorem Ipsum",
     title: "Tailor made",
     description:
-"Healthtechs didevelop sesuai dengan kebutuhan Anda. Sehingga Anda lebih efektif dan efisien dalam bekerja",    icon: FaHospital,
+      "Healthtechs didevelop sesuai dengan kebutuhan Anda. Sehingga Anda lebih efektif dan efisien dalam bekerja",
+    icon: FaHospital,
   },
   {
     data: "90",
